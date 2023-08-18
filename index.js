@@ -23,7 +23,10 @@ const operations = {
         const name = prompt("Podaj ID produktu do znalezienia:");
         mag.Find(name);
     },
-    "6": () => {return false},
+    "6": () => {
+        console.log("Wyjście...");
+        return true;
+    },
 };
 
 while (true) {
