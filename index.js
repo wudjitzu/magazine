@@ -8,7 +8,16 @@ const operations = {
         const amount = parseInt(prompt("Podaj ilość:"));
         mag.Add(name, amount);
     },
-    "2": () => mag.Display(),
+    "2": () => {
+        const items = mag.Display();
+        console.log("Zawartość magazynu:");
+        items.forEach(item => {
+            console.log(`ID: ${item.id}`);
+            console.log(`Nazwa: ${item.name}`);
+            console.log(`Ilość: ${item.amount}`);
+            console.log("--------"); // Oddzielenie między elementami
+        });
+    },
     "3": () => {
         const id = parseInt(prompt("Podaj ID produktu do zmiany:"));
         const name = prompt("Podaj nową nazwę produktu:");
