@@ -25,7 +25,6 @@ const operations = {
     },
     "6": () => {
         console.log("Wyjście...");
-        return true;
     },
 };
 
