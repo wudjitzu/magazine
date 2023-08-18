@@ -9,10 +9,7 @@ export class Magazine {
     }
 
     Display() {
-        console.log("Zawartość magazynu:");
-        this.db.forEach(item => {
-            console.log(`ID: ${item.id}, Nazwa: ${item.name}, Ilość: ${item.amount}`);
-        });
+        return this.db; // Zwracanie samej tablicy obiektów
     }
 
     Update(id, name, amount) {
